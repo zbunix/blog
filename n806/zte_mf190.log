@@ -1,0 +1,314 @@
+[net.change]: [net.gprs.ppp-exit]
+[net.dns1]: [210.21.196.6]
+[net.dns2]: [221.5.88.88]
+[net.dnschange]: [1]
+[net.gprs.ppp-exit]: [8]
+[net.hostname]: [android-5f4f3ada98960f77]
+[net.interfaces.defaultroute]: [gprs]
+[net.ppp0.dns1]: [210.21.196.6]
+[net.ppp0.dns2]: [221.5.88.88]
+[net.ppp0.local-ip]: []
+[net.ppp0.remote-ip]: [10.64.64.64]
+
+
+
+
+[net.wlan0.dns1]: [50.0.0.0]
+[net.wlan0.dns2]: [50.0.0.0]
+
+[wifi.interface]: [wlan0]
+[wifi.supplicant_scan_interval]: [15]
+[wlan.driver.status]: [ok]
+
+[dhcp.wlan0.dns1]: [202.96.134.133]
+[dhcp.wlan0.dns2]: [210.21.196.6]
+[dhcp.wlan0.dns3]: []
+[dhcp.wlan0.dns4]: []
+[dhcp.wlan0.gateway]: [192.168.3.3]
+[dhcp.wlan0.ipaddress]: [192.168.3.144]
+[dhcp.wlan0.leasetime]: [7200]
+[dhcp.wlan0.mask]: [255.255.255.0]
+[dhcp.wlan0.pid]: [519]
+[dhcp.wlan0.reason]: [BOUND]
+[dhcp.wlan0.result]: [ok]
+[dhcp.wlan0.server]: [192.168.3.3]
+
+
+/ # logcat -c
+/ # logcat 
+[  111.006458] ehci_irq: port change detect
+[  111.290054] usb 3-1: new high speed USB device number 2 using sw-ehci
+--------- beginning of /dev/log/system
+I/USB3G   (   92): event { 'add', '/devices/platform/sw-ehci.2/usb3/3-1', 'usb', '', 189, 257 }
+I/USB3G   (   92): path : '/sys/devices/platform/sw-ehci.2/usb3/3-1'
+I/USB3G   (   92): VID :size 5,vid_path '/sys/devices/platform/sw-ehci.2/usb3/3-1/idVendor',VID  '19d2
+I/USB3G   (   92): '.
+I/USB3G   (   92): PID :size 5,Pid_path '/sys/devices/platform/sw-ehci.2/usb3/3-1/idProduct',PID  '2000
+I/USB3G   (   92): '.
+I/USB3G   (   92): cmd=/system/etc/usb_modeswitch.sh /system/etc/usb_modeswitch.d/19d2_2000 &,
+I/USB3G   (   92): excute ret : 0,err:No such file or directory
+W/ThrottleService(  146): unable to find stats for iface rmnet0
+[  118.846678] ehci_irq: port change detect
+[  118.850703] usb 3-1: USB disconnect, device number 2
+[  118.948724] ehci_irq: port change detect
+[  119.260063] usb 3-1: new high speed USB device number 3 using sw-ehci
+I/USB3G   (   92): event { 'add', '/devices/platform/sw-ehci.2/usb3/3-1', 'usb', '', 189, 258 }
+I/USB3G   (   92): path : '/sys/devices/platform/sw-ehci.2/usb3/3-1'
+I/USB3G   (   92): VID :size 5,vid_path '/sys/devices/platform/sw-ehci.2/usb3/3-1/idVendor',VID  '19d2
+I/USB3G   (   92): '.
+I/USB3G   (   92): PID :size 5,Pid_path '/sys/devices/platform/sw-ehci.2/usb3/3-1/idProduct',PID  '0117
+I/USB3G   (   92): '.
+I/USB3G   (   92): cmd=/system/etc/usb_modeswitch.sh /system/etc/usb_modeswitch.d/19d2_0117 &,
+I/USB3G   (   92): excute ret : 0,err:No such file or directory
+[  119.477282] option 3-1:1.0: GSM modem (1-port) converter detected
+[  119.486953] usb 3-1: GSM modem (1-port) converter now attached to ttyUSB0
+[  119.495120] option 3-1:1.1: GSM modem (1-port) converter detected
+[  119.503128] usb 3-1: GSM modem (1-port) converter now attached to ttyUSB1
+[  119.511485] option 3-1:1.2: GSM modem (1-port) converter detected
+[  119.519859] usb 3-1: GSM modem (1-port) converter now attached to ttyUSB2
+[  119.528426] scsi1 : usb-storage 3-1:1.3
+[  120.532443] scsi 1:0:0:0: CD-ROM            ZTE      USB SCSI CD-ROM  2.31 PQ: 0 ANSI: 2
+[  120.547138] init: untracked pid 506 exited
+[  120.552510] sr0: scsi-1 drive
+[  120.555487] cdrom: Uniform CD-ROM driver Revision: 3.20
+D/Vold    (   82): Volume usbhost1 state changing 0 (No-Media) -> 1 (Idle-Unmounted)
+D/MountService(  146): volume state changed for /mnt/usbhost1 (removed -> unmounted)
+I/StorageNotification(  209): Media {/mnt/usbhost1} [  120.581806] sr 1:0:0:0: Attached scsi CD-ROM sr0
+state changed from {removed} -> {unmounted}
+D/VoldCmdListener(   82): volume shared /mnt/sdcard ums
+--------- beginning of /dev/log/main
+V/JINGNENG_MEDIAPROVIDER_YEWEI(  257): MediaScannerReceiver#onReceive : action = android.intent.action.MEDIA_UNMOUNTED
+D/MediaScannerReceiver(  257): action: android.intent.action.MEDIA_UNMOUNTED path: /mnt/usbh[  120.617262] scsi 1:0:0:1: Direct-Access     ZTE      MMC Storage      2.31 PQ: 0 ANSI: 2
+ost1
+D/MountService(  146): sendStorageIntent Intent { act=andr[  120.632558] Wait for media ready, retries = 0
+oid.intent.action.MEDIA_UNMOUNTED dat=file:///mnt/usbhost1 (has [  120.640430] usb-stor-scan used greatest stack depth: 5384 bytes left
+extras) }
+D/VoldCmdListener(   82): volume mount /mnt/usbhost1
+I/Vold    (   82): Volume::mountVol state : 1
+I/Vold    (   82): Volume::mountVol: mMountpoint /mnt/usbhost1
+I/Vold    (   82): /dev/block/vold/11:0 being considered for volume usbhost1
+D/Vold    (   82): Volume usbhost1 state changing 1 (Idle-Unmounted) -> 3 (Checking)
+D/MountService(  146): volume state changed for /mnt/usbhost1 (unmounted -> checking)
+I/DirectVolume(   82): Volume usbhost1 disk has changed
+D/Vold    (   82): Volume usbhost1 state changing 3 (Checking) -> 1 (Idle-Unmounted)
+I/StorageNotification(  209): Media {/mnt/usbhost1} state changed from {unmounted} -> {checking}
+D/MountService(  146): sendStorageIntent Intent { act=android.intent.action.MEDIA_CHECKING dat=file:///mnt/usbhost1 (has extras) }
+D/MountService(  146): volume state changed for /mnt/usbhost1 (checking -> unmounted)
+I/StorageNotification(  209): Media {/mnt/usbhost1} state changed from {checking} -> {unmounted}
+V/JINGNENG_MEDIAPROVIDER_YEWEI(  257): MediaScannerReceiver#onReceive : action = android.intent.action.MEDIA_UNMOUNTED
+D/MediaScannerReceiver(  257): action: android.intent.action.MEDIA_UNMOUNTED path: /mnt/usbhost1
+D/MountService(  146): sendStorageIntent Intent { act=android.intent.action.MEDIA_UNMOUNTED dat=file:///mnt/usbhost1 (has extras) }
+W/logwrapper(  517): Unable to background process (No such file or directory)
+I//system/bin/fsck.exfat(   82): exfatfsck 0.9.5
+I//system/bin/fsck.exfat(   82): ERROR: failed to open `/dev/block/vold/11:0'.
+I/logwrapper(   82): /system/bin/fsck.exfat terminated by exit(1)
+W/logwrapper(  519): Unable to background process (No such file or directory)
+E/Vold    (   82): Filesystem check failed (unknown exit code 1)
+I//system/bin/fsck_msdos(   82): ** /dev/block/vold/11:0
+I//system/bin/fsck_msdos(   82): Can't open: No medium found
+I/logwrapper(   82): /system/bin/fsck_msdos terminated by exit(8)
+W/logwrapper(  520): Unable to background process (No such file or directory)
+E/Vold    (   82): Filesystem check failed (unknown exit code 8)
+I//system/bin/ntfs-3g.probe(   82): Error opening '/dev/block/vold/11:0': No medium found
+I/logwrapper(   82): /system/bin/ntfs-3g.probe terminated by exit(18)
+E/Vold    (   82): Filesystem check failed (unknown exit code 18)
+E/Vold    (   82): /dev/block/vold/11:0 failed FS checks (I/O error)
+W/Vold    (   82): Duplicate state (1)
+E/Vold    (   82): mount part failed
+W/Vold    (   82): Duplicate state (1)
+E/Vold    (   82): Volume usbhost1 found no suitable devices for mounting :(
+W/Vold    (   82): Duplicate state (1)
+D/MountService(  146): volume state changed for /mnt/usbhost1 (unmounted -> unmountable)
+D/MountService(  146): sendStorageIntent Intent { act=android.intent.action.MEDIA_UNMOUNTABLE dat=file:///mnt/usbhost1 (has extras) }
+W/MountService(  146): Insertion mount failed (-4)
+W/ResourceType(  209): No known package when getting value for resource number 0x7f08007e
+D/VoldCmdListener(   82): volume shared /mnt/sdcard ums
+I/StorageNotification(  209): Media {/mnt/usbhost1} state changed from {unmounted} -> {unmountable}
+D/dalvikvm(  209): GC_FOR_ALLOC freed 3872K, 30% free 9861K/13959K, paused 23ms
+[  121.426523] init: untracked pid 511 exited
+D/dalvikvm(  209): GC_FOR_ALLOC freed 343K, 30% free 9841K/13959K, paused 22ms
+[  121.641268] Wait for media ready, retries = 1
+[  122.651657] Wait for media ready, retries = 2
+[  123.661764] Wait for media ready, retries = 3
+D/ExchangeService(  443): Received deviceId from Email app: null
+D/ExchangeService(  443): !!! deviceId unknown; stopping self and retrying
+D/dalvikvm(  209): GC_CONCURRENT freed 118K, 28% free 10152K/13959K, paused 2ms+3ms
+W/Vold    (   82): Duplicate sta[  124.671798] Wait for media ready, retries = 4
+[  124.678097] sd 1:0:0:1: [sda] Attached SCSI removable disk
+te (1)
+I/DirectVolume(   82): Volume usbhost1 disk has changed
+W/Vold    (   82): Duplicate state (1)
+D/VoldCmdListener(   82): volume mount /mnt/usbhost1
+I/Vold    (   82): Volume::mountVol state : 1
+I/Vold    (   82): Volume::mountVol: mMountpoint /mnt/usbhost1
+I/Vold    (   82): /dev/block/vold/8:0 being considered for volume usbhost1
+D/Vold    (   82): Volume usbhost1 state changing 1 (Idle-Unmounted) -> 3 (Checking)
+D/MountService(  146): volume state changed for /mnt/usbhost1 (unmountable -> checking)
+W/logwrapper(  522): Unable to background process (No such file or directory)
+D/MountService(  146): sendStorageIntent Intent { act=android.intent.action.MEDIA_CHECKING dat=file:///mnt/usbhost1 (has extras) }
+I//system/bin/fsck.exfat(   82): exfatfsck 0.9.5
+I//system/bin/fsck.exfat(   82): ERROR: failed to open `/dev/block/vold/8:0'.
+I/logwrapper(   82): /system/bin/fsck.exfat terminated by exit(1)
+W/logwrapper(  523): Unable to background process (No such file or directory)
+I/StorageNotification(  209): Media {/mnt/usbhost1} state changed from {unmountable} -> {checking}
+E/Vold    (   82): Filesystem check failed (unknown exit code 1)
+I//system/bin/fsck_msdos(   82): ** /dev/block/vold/8:0
+I//system/bin/fsck_msdos(   82): Can't open: No medium found
+I/logwrapper(   82): /system/bin/fsck_msdos terminated by exit(8)
+W/logwrapper(  524): Unable to background process (No such file or directory)
+E/Vold    (   82): Filesystem check failed (unknown exit code 8)
+I//system/bin/ntfs-3g.probe(   82): Error opening '/dev/block/vold/8:0': No medium found
+I/logwrapper(   82): /system/bin/ntfs-3g.probe terminated by exit(18)
+E/Vold    (   82): Filesystem check failed (unknown exit code 18)
+E/Vold    (   82): /dev/block/vold/8:0 failed FS checks (I/O error)
+D/Vold    (   82): Volume usbhost1 state changing 3 (Checking) -> 1 (Idle-Unmounted)
+E/Vold    (   82): mount part failed
+W/Vold    (   82): Duplicate state (1)
+E/Vold    (   82): Volume usbhost1 found no suitable devices for mounting :(
+W/Vold    (   82): Duplicate state (1)
+D/MountService(  146): volume state changed for /mnt/usbhost1 (checking -> unmounted)
+D/MountService(  146): volume state changed for /mnt/usbhost1 (unmounted -> unmountable)
+D/MountService(  146): sendStorageIntent Intent { act=android.intent.action.MEDIA_UNMOUNTED dat=file:///mnt/usbhost1 (has extras) }
+I/StorageNotification(  209): Media {/mnt/usbhost1} state changed from {checking} -> {unmounted}
+D/VoldCmdListener(   82): volume shared /mnt/sdcard ums
+V/JINGNENG_MEDIAPROVIDER_YEWEI(  257): MediaScannerReceiver#onReceive : action = android.intent.action.MEDIA_UNMOUNTED
+D/MediaScannerReceiver(  257): action: android.intent.action.MEDIA_UNMOUNTED path: /mnt/usbhost1
+D/MountService(  146): sendStorageIntent Intent { act=android.intent.action.MEDIA_UNMOUNTABLE dat=file:///mnt/usbhost1 (has extras) }
+W/MountService(  146): Insertion mount failed (-4)
+W/ResourceType(  209): No known package when getting value for resource number 0x7f08007e
+I/StorageNotification(  209): Media {/mnt/usbhost1} state changed from {unmounted} -> {unmountable}
+D/dalvikvm(  209): GC_CONCURRENT freed 156K, 25% free 10506K/13959K, paused 2ms+3ms
+D/dalvikvm(  209): GC_CONCURRENT freed 626K, 27% free 10311K/13959K, paused 2ms+2ms
+D/dalvikvm(  209): GC_FOR_ALLOC freed 713K, 30% free 9849K/13959K, paused 21ms
+D/dalvikvm(  209): GC_CONCURRENT freed 124K, 28% free 10153K/13959K, paused 1ms+4ms
+D/ExchangeService(  443): !!! EAS ExchangeService, onCreate
+D/ExchangeService(  443): !!! EAS ExchangeService, onStartCommand, startingUp = false, running = false
+D/ExchangeService(  443): !!! EAS ExchangeService, onStartCommand, startingUp = true, running = false
+D/ExchangeService(  443): !!! Email application not found; stopping self
+W/ActivityManager(  146): Unable to start service Intent { act=com.android.email.ACCOUNT_INTENT }: not found
+E/ActivityThread(  443): Service com.android.exchange.ExchangeService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@41315128 that was originally bound here
+E/ActivityThread(  443): android.app.ServiceConnectionLeaked: Service com.android.exchange.ExchangeService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@41315128 that was originally bound here
+E/ActivityThread(  443):        at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:936)
+E/ActivityThread(  443):        at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:830)
+E/ActivityThread(  443):        at android.app.ContextImpl.bindService(ContextImpl.java:1134)
+E/ActivityThread(  443):        at android.content.ContextWrapper.bindService(ContextWrapper.java:370)
+E/ActivityThread(  443):        at com.android.emailcommon.service.ServiceProxy.setTask(ServiceProxy.java:157)
+E/ActivityThread(  443):        at com.android.emailcommon.service.ServiceProxy.setTask(ServiceProxy.java:145)
+E/ActivityThread(  443):        at com.android.emailcommon.service.ServiceProxy.test(ServiceProxy.java:191)
+E/ActivityThread(  443):        at com.android.exchange.ExchangeService$7.run(ExchangeService.java:1778)
+E/ActivityThread(  443):        at com.android.emailcommon.utility.Utility$2.doInBackground(Utility.java:552)
+E/ActivityThread(  443):        at com.android.emailcommon.utility.Utility$2.doInBackground(Utility.java:550)
+E/ActivityThread(  443):        at android.os.AsyncTask$2.call(AsyncTask.java:264)
+E/ActivityThread(  443):        at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+E/ActivityThread(  443):        at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/ActivityThread(  443):        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+E/ActivityThread(  443):        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+E/ActivityThread(  443):        at java.lang.Thread.run(Thread.java:856)
+W/ActivityManager(  146): Unbind failed: could not find connection for android.os.BinderProxy@414ef1b0
+W/ActivityManager(  146): Unable to start service Intent { act=com.android.email.ACCOUNT_INTENT }: not found
+D/CAT     (  286): CatService: SIM ready. Reporting STK service running now...
+D/MccTable(  286): updateMccMncConfiguration: mcc=460, mnc=1
+D/MccTable(  286): locale set to zh_cn
+D/MccTable(  286): WIFI_COUNTRY_CODE set to cn
+I/WifiService(  146): WifiService trying to set country code to cn with persist set to true
+D/dalvikvm(  286): GC_CONCURRENT freed 349K, 5% free 9413K/9863K, paused 2ms+5ms
+W/GpsLocationProvider(  146): Failed to enable location provider
+W/BackupManagerService(  146): dataChanged but no participant pkg='com.android.providers.settings' uid=1001
+I/ActivityManager(  146): Config changed: {1.0 460mcc1mnc zh_CN layoutdir=0 sw320dp w533dp h294dp nrml long land finger -keyb/v/h -nav/h s.4}
+D/HWLauncherContainer(  302): come in HWLauncherContainer getLayoutParams
+D/Launcher(  302): onDestory
+D/ViewRootImpl(  209): pckname = com.android.systemui
+D/Launcher(  302): onCreate
+D/dalvikvm(  146): GC_CONCURRENT freed 480K, 6% free 10864K/11463K, paused 3ms+21ms
+D/Launcher(  302): onResume
+D/ViewRootImpl(  302): pckname = com.android.launcher
+D/HWLauncherContainer(  302): come in HWLauncherContainer getLayoutParams
+D/HWLauncherContainer(  302): come in HWLauncherContainer getLayoutParams
+D/HWLauncherContainer(  302): come in HWLauncherContainer getLayoutParams
+D/HWLauncherContainer(  302): come in HWLauncherContainer getLayoutParams
+D/HWLauncherContainer(  302): come in HWLauncherContainer getLayoutParams
+I/pppd    (  537): Starting pppd 
+I/pppd    (  538): PORT: /dev/ttyUSB2 115200 
+I/pppd    (  539): USER: (null) 
+I/pppd    (  540): PSWD: (null) 
+I/pppd    (  541): CONN: /system/bin/chat -v -s -S TIMEOUT 25 ABORT 'BUSY' ABORT 'ERROR' ABORT '+CME ERROR:' '' AT '' ATH0 ''  ATDT*99# CONNECT 
+I/pppd    (  542): DISC: /system/bin/chat -v -s -S ABORT 'BUSY' ABORT 'ERROR' ABORT '+CME ERROR:' '' +++ATH0 
+I/WindowManager(  146): MediaPlayer.is not PlayingVideo
+D/dalvikvm(  302): GC_EXPLICIT freed 2472K, 18% free 12160K/14727K, paused 2ms+5ms
+I/pppd    (  543): Serial connection established.
+D/pppd    (  543): using channel 1
+I/pppd    (  543): Using interface ppp0
+I/pppd    (  543): Connect: ppp0 <--> /dev/ttyUSB2
+D/dalvikvm(  146): GC_EXPLICIT freed 190K, 6% free 10840K/11463K, paused 3ms+5ms
+D/pppd    (  543): sent [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0xb1649e4a> <pcomp> <accomp>]
+D/pppd    (  543): rcvd [LCP ConfReq id=0x0 <asyncmap 0x0> <auth chap MD5> <magic 0xfc6a04> <pcomp> <accomp>]
+D/pppd    (  543): sent [LCP ConfAck id=0x0 <asyncmap 0x0> <auth chap MD5> <magic 0xfc6a04> <pcomp> <accomp>]
+D/pppd    (  543): rcvd [LCP ConfAck id=0x1 <asyncmap 0x0> <magic 0xb1649e4a> <pcomp> <accomp>]
+D/pppd    (  543): rcvd [LCP DiscReq id=0x1 magic=0xfc6a04]
+D/pppd    (  543): rcvd [CHAP Challenge id=0x1 <884cec7f54b69472907f4e8142099948>, name = "UMTS_CHAP_SRVR"]
+D/pppd    (  543): sent [CHAP Response id=0x1 <dd2e6ae265ab6ff7bfdac9e03daf435a>, name = "(null)"]
+D/pppd    (  543): rcvd [CHAP Success id=0x1 ""]
+I/pppd    (  543): CHAP authentication succeeded
+D/pppd    (  543): sent [CCP ConfReq id=0x1 <deflate 15> <deflate(old#) 15> <bsd v1 15>]
+D/pppd    (  543): sent [IPCP ConfReq id=0x1 <addr 0.0.0.0> <ms-dns1 0.0.0.0> <ms-dns3 0.0.0.0>]
+D/pppd    (  543): rcvd [LCP ProtRej id=0x2 80 fd 01 01 00 0f 1a 04 78 00 18 04 78 00 15 03 2f]
+D/pppd    (  543): rcvd [IPCP ConfNak id=0x1 <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14> <ms-wins 10.11.12.13> <ms-wins 10.11.12.14>]
+D/pppd    (  543): sent [IPCP ConfReq id=0x2 <addr 0.0.0.0> <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14>]
+D/pppd    (  543): rcvd [IPCP ConfNak id=0x2 <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14> <ms-wins 10.11.12.13> <ms-wins 10.11.12.14>]
+D/pppd    (  543): sent [IPCP ConfReq id=0x3 <addr 0.0.0.0> <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14>]
+D/pppd    (  543): rcvd [IPCP ConfReq id=0x0]
+D/pppd    (  543): sent [IPCP ConfNak id=0x0 <addr 0.0.0.0>]
+D/pppd    (  543): rcvd [IPCP ConfNak id=0x3 <addr 172.27.154.105> <ms-dns1 210.21.196.6> <ms-dns3 221.5.88.88>]
+D/pppd    (  543): sent [IPCP ConfReq id=0x4 <addr 172.27.154.105> <ms-dns1 210.21.196.6> <ms-dns3 221.5.88.88>]
+D/pppd    (  543): rcvd [IPCP ConfReq id=0x1]
+D/pppd    (  543): sent [IPCP ConfAck id=0x1]
+D/pppd    (  543): rcvd [IPCP ConfAck id=0x4 <addr 172.27.154.105> <ms-dns1 210.21.196.6> <ms-dns3 221.5.88.88>]
+W/pppd    (  543): Could not determine remote IP address: defaulting to 10.64.64.64
+I/pppd    (  543): local  IP address 172.27.154.105
+I/pppd    (  543): remote IP address 10.64.64.64
+I/pppd    (  543): primary   DNS address 210.21.196.6
+I/pppd    (  543): secondary DNS address 221.5.88.88
+D/pppd    (  543): Script /etc/ppp/ip-up started (pid 547)
+D/pppd    (  543): Script /etc/ppp/ip-up finished (pid 547), status = 0x0
+D/ConnectivityService(  146): ConnectivityChange for mobile: CONNECTED/CONNECTED
+D/Tethering(  146): MasterInitialState.processMessage what=3
+I/ActivityManager(  146): Start proc com.android.settings:remote for service com.android.settings/.sntp.SNTP: pid=557 uid=1000 gids={1015, 3002, 3001, 3003}
+D/SNTP--->(  557):  start SNTP Service !! 
+D/SNTP--->(  557): System.currentTimeMillis(): 1262304146488 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=0
+D/GpsLocationProvider(  146): NTP server returned: 1351063026047 (Wed Oct 24 15:17:06 格林尼治标准时间+0800 2012) reference: 142458 certainty: 258 system time offset: 88758879072
+[  144.606121] sunxi-rtc sunxi-rtc: set time 2012-10-24 7:17:8
+D/SystemClock(  146): Setting time of day to sec=1351063028
+D/AlarmManagerService(  146): Kernel timezone updated to -480 minutes west of GMT
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063028564 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=1
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063031568 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=2
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063034572 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=3
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063037575 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=4
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063040579 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=5
+I/NetworkPolicy(  146): no policy for active mobile network; generating default policy
+D/NetworkPolicy(  146): applying policy NetworkPolicy[NetworkTemplate: matchRule=MOBILE_ALL, subscriberId=460019252700832]: cycleDay=24, warningBytes=2147483648, limitBytes=-1, lastSnooze=-1 to ifaces [ppp0]
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063043583 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=6
+D/SNTP--->(  557): System.currentTimeMillis(): 1351063046587 ms
+D/SNTP--->(  557): error: android.os.NetworkOnMainThreadException
+D/SNTP--->(  557): sntp request time false !!
+D/SNTP--->(  557):  ===run sntpTask=== mRetryCount=7
